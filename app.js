@@ -5,6 +5,7 @@ function login(form) {
       number        : form.username.value || "Anonymous", // listen on username line else Anonymous
       publish_key   : 'pub-c-566d8d42-99d0-4d21-bc72-6d376ed70567',
       subscribe_key : 'sub-c-107b4e72-082d-11e6-996b-0619f8945a4f',
+      ssl : (('https:' == document.location.protocol) ? true : false)
   }); 
   phone.ready(function(){ form.username.style.background="#55ff5b"; });
   phone.receive(function(session){
