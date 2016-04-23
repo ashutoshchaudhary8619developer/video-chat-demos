@@ -11,11 +11,19 @@
 <a href="/group">Group</a>
 
 <div id="vid-box"></div>
+<script>
+var mobileLogin = function () {
+  return login;
+};
+</script>
 
 <form name="loginForm" id="login" action="#" <!-- onsubmit="return login(this); -->">
     <input type="text" name="username" id="username" placeholder="Pick a username!" />
-    <input type="button" name="login_submit" onclick="return login()" value="Log In">
+    <input type="button" name="login_submit" onclick="mobileLogin();" value="Log In">
 </form>
+
+
+
 
 <form name="callForm" id="call" action="#" onsubmit="return makeCall(this);">
   <input type="text" name="number" placeholder="Enter user to dial!" />
