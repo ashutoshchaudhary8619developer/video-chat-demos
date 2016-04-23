@@ -1,0 +1,4 @@
+#vid-thumb {
+  fixed: bottom;
+  transform: scale(-.25, .25);
+}

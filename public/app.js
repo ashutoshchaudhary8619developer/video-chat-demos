@@ -19,8 +19,6 @@ function login(form) {
       session.ended(function(session) { video_out.innerHTML=''; });
   });
 
-
-
   return false;   // So the form does not submit.
 }
 
