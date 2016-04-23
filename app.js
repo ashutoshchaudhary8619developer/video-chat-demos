@@ -2,6 +2,8 @@ var video_out = document.getElementById("vid-box");
 
 function login(form) {
 
+  console.log('login has occurred');
+
   var phone = window.phone = PHONE({
       number        : $('#username').val() || "Anonymous", // listen on username line else Anonymous
       publish_key   : 'pub-c-566d8d42-99d0-4d21-bc72-6d376ed70567',
